@@ -33,3 +33,82 @@ The doctype is the only element living outside the html tag.
 <html lang="fr" dir="ltr">
 ```
 
+### head tag
+
+The head tag element contains all the metadatas related to your page. All the elements put in the head are not visible in the window of the browser.
+
+A lot of metadatas exist, some specific to some CMS.
+
+**Usage**
+You can find inside the head:
+
+- title of the webpage
+- asynchronous script calls
+- metadata
+- CSS code embed (critical CSS)
+- JavaScript code embed
+
+### Meta charset
+The meta charset declares the page’s character encoding.
+
+```
+<head>
+    <!-- Set character encoding for the document -->
+    <meta charset="value">
+</head>
+```
+
+### Viewport
+The meta viewport gives information about the initial size of the viewport.
+
+**Tip:** The viewport is used by mobile devices only.
+
+**Accessibility tip:** Never use maximum-scale=1.0. It prevents the user from zooming in on the website. It causes an accessibility issue.
+
+```
+<head>
+    ...
+    <!-- Viewport for responsive web design -->
+    <meta name="viewport" content="key=value, key=value">
+</head>
+```
+
+### Title
+The title meta tag defines the title of the web page.
+
+**Tip:** The title is only visible on the tab/window of your browser.
+
+**Warning!** The title should always have less than 56 characters.
+
+
+### Meta description
+```
+<head>
+    ...
+    <!-- Meta Description -->
+    <meta name="description" content="Description of the page less than 150 characters">
+  </head>
+
+```
+### Favicons
+
+```
+<head>
+    ...
+    <!-- Standard favicon -->
+    <link rel="icon" type="image/x-icon" href="https://example.com/favicon.ico">
+    <!-- Recommended favicon format -->
+    <link rel="icon" type="image/png" href="https://example.com/favicon.png">
+    ...
+</head>
+```
+
+### Tag attributes
+Attributes provide additional information or instruction for an HTML element. It is always included inside the opening tag.
+
+Data-* attribute
+It is possible to declare any attribute using the data- prefix
+
+`<tag data-extra-attr="value">some content</tag>`
+
+Here I'm describing someone tags
