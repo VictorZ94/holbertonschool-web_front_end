@@ -1,0 +1,26 @@
+/* scroll behavior smooth */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* working all colors for all web page */
+body {
+    color: #161616;
+}
+
+a[href*="#"] {
+    color: #161616;
+}
+
+.visually-hidden {
+    display: none;
+}
+
+.card-category {
+    color: #D73953;
+}
+
+.section-tagline {
+    color: #D73953;
+}
