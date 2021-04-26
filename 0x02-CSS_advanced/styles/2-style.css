@@ -7,7 +7,7 @@ body {
     color: #161616;
 }
 
-a[href^="#"] {
+a {
     color: #161616;
 }
 
