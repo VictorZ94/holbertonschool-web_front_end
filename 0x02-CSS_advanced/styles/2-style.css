@@ -1,15 +1,13 @@
-/* scroll behavior smooth */
-
+/* working all colors for all web page */
 html {
     scroll-behavior: smooth;
 }
 
-/* working all colors for all web page */
 body {
     color: #161616;
 }
 
-a[href*="#"] {
+a[href^="#"] {
     color: #161616;
 }
 
