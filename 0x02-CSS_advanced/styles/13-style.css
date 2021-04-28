@@ -75,14 +75,14 @@ a {
     color: var(--color-primary);
 }
 
-a[href*="https"]:visited {
+a:visited {
     font-style: italic;
 }
 
-a[href*="https"]:hover {
+a:hover {
     text-decoration: underline;
 }
 
-a[href*="https"]:active {
+a:active {
     background-color: var(--color-light-grey);
 }
