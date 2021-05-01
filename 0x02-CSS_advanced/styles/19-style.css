@@ -522,7 +522,7 @@ a:active {
 
 /* end styles navbar-menu */
 
-ul .row {
+ul.row {
   margin: 0;
   padding: 0;
   list-style: none;
