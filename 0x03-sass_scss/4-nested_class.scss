@@ -1,0 +1,9 @@
+/** Nested file  **/
+$main-color: #3D3D3D;
+$sec-color: #FF0000;
+body {
+	color: $main-color;
+	.red {
+		color: $sec-color;
+	}
+}
