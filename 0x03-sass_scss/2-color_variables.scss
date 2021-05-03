@@ -1,0 +1,13 @@
+/** Using sass variable  **/
+$mycolor: #3D3D3D;
+$backcolor: #6D6D6D;
+body {
+	color: $mycolor;
+	background-color: $backcolor;
+}
+p {
+	color: $mycolor;
+}
+h2 {
+	background-color: $backcolor;
+}
