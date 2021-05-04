@@ -1,0 +1,11 @@
+/** Mixin for using function  **/
+@mixin main($value) {
+	margin-left: $value;
+	margin-right: $value;
+}
+body {
+	@include main(10px);
+}
+div {
+	@include main(15px);
+}
