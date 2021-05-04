@@ -1,0 +1,14 @@
+/** Extend directive  **/
+$main-color: #00FF00;
+$sec-color: #FF0000;
+.info {
+	font-size: 12px;
+}
+.success {
+	@extend .info;
+	color: $main-color;
+}
+.warning {
+	@extend .info;
+	color: $sec-color;
+}
