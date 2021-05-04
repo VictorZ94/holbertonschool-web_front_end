@@ -1,0 +1,22 @@
+/** media queries with sass  **/
+$media_value: 960px;
+$value: 20px;
+$main-color: #1D1D1D;
+h1 {
+
+	font-size: $value;
+	@for $number from 1 through 4 {
+		$value: $value - 2px;
+		@if $number < 4 {
+			@media screen and (max-width: #{$media_value}) {
+				& {
+					font-size: $value;
+					&.small {
+						color: $main-color;
+					}
+				}
+			}
+		}
+	        $media_value: $media_value - 320px;
+	}
+}
