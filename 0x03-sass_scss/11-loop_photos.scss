@@ -1,0 +1,7 @@
+/** Import combined with each directive **/
+@import '11-photos.scss';
+@each $name in ($list-names) {
+	.photho-#{$name} {
+		background: image-url("photos/#{$name}.jpg") no-repeat;
+	}
+}
