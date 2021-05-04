@@ -1,0 +1,13 @@
+/** for and if directives **/
+$percentage: 100%;
+$perce: 100%;
+@for $number from 1 through 4 {
+	.col-#{$number} {
+		@if $number == 3 {
+			width: $perce / 3;
+		} @else { 
+			width: $percentage;
+			$percentage: $percentage / 2;
+		}
+	}
+}
