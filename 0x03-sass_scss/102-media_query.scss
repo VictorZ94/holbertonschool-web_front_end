@@ -11,9 +11,10 @@ h1 {
 			@media screen and (max-width: #{$media_value}) {
 				& {
 					font-size: $value;
+					@if $number >= 3 {
 					&.small {
 						color: $main-color;
-					}
+					}}
 				}
 			}
 		}
