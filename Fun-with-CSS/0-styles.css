@@ -1,0 +1,60 @@
+:root {
+    --image: url(icons.png);
+    --color-border: #848484;
+    --color-background: #f7f7f7;
+    --display-image: block;
+    --padding-icon: 1.2rem;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    display: block;
+    height: 321px;
+    width: 208px;
+    border: 2px solid var(--color-border);
+    border-radius: 5%;
+    margin-left: 38px;
+    background-color: var(--color-background);
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.7rem;
+    padding-top: 1rem;
+}
+
+li .i-html {
+    background-image: var(--image);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: var(--display-image);
+    overflow: hidden;
+    height: 200px;
+    width: 150px;
+    margin: 1.7rem;
+}
+
+li .i-css{
+    background-image: var(--image);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: var(--display-image);
+    overflow: hidden;
+    height: 200px;
+    width: 150px;
+    margin: 1.7rem;
+}
+
+li .i-js {
+    background-image: var(--image);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    display: var(--display-image);
+    overflow: hidden;
+    height: 200px;
+    width: 150px;
+    margin: 1.7rem;
+}
