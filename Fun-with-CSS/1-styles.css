@@ -1,0 +1,28 @@
+:root {
+    --color-primary: #eb0045;
+    /** MOTION **/
+    --transition-duration: 1s;
+    --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01);
+}
+
+a {
+    text-decoration: none;
+    position: relative;
+    letter-spacing: 0.5px;
+    color: var(--color-primary);
+}
+
+a::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    background-color: var(--color-primary);
+    left: 0;
+    width: 0;
+    height: 0.2rem;
+    transition: var(--transition-duration) var(--transition-cubic-bezier) ;
+}
+
+a:hover::before {
+    width: 100%;
+}
