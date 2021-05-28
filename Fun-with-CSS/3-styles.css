@@ -1,0 +1,121 @@
+:root {
+  --color-primary: #eb0045;
+  --color-white: #EEEEEE;
+}
+
+.menu-item,
+.menu-open-button {
+  background-color: var(--color-primary);
+  border-radius: 100%;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  color: #FFFFFF;
+  line-height: 70px;
+  transform: translate3d(0, 0, 0);
+  transition: transform ease-out 200ms;
+}
+
+.menu-open {
+  display: none;
+}
+
+.menu-line {
+  width: 25px;
+  height: 3px;
+  background: #FFFFFF;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -12.5px;
+  margin-top: -1.5px;
+  transition: transform 200ms;
+}
+
+.menu-line-1 {
+  transform: translate3d(0, -8px, 0);
+}
+
+.menu-line-2 {
+  transform: translate3d(0, 0, 0);
+}
+
+.menu-line-3 {
+  transform: translate3d(0, 8px, 0);
+}
+
+.menu-open:checked + .menu-open-button .menu-line-1 {
+  transform: translate3d(0, 0, 0) rotate(45deg);
+}
+
+.menu-open:checked + .menu-open-button .menu-line-2 {
+  transform: translate3d(0, 0, 0) scale(0.1, 1);
+}
+
+.menu-open:checked + .menu-open-button .menu-line-3 {
+  transform: translate3d(0, 0, 0) rotate(-45deg);
+}
+
+.menu {
+  margin: 30px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 26px;
+}
+
+.menu-item:hover {
+  background: var(--color-white);
+  color: var(--color-primary);
+  border: 1px solid;
+  cursor: none;
+}
+
+.menu-open-button {
+  z-index: 2;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-duration: 400ms;
+  transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+  cursor: none;
+}
+
+.menu-open-button:hover {
+  transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+}
+
+.menu-open:checked + .menu-open-button {
+  transition-timing-function: linear;
+  transition-duration: 200ms;
+  transform: scale(1.0, 1.0) translate3d(0, 0, 0);
+}
+
+.menu-open:checked ~ .menu-item {
+  transition-timing-function: cubic-bezier(0.935, 0, 0.34, 1.33);
+}
+
+.menu-open:checked ~ .menu-item:nth-child(3) {
+  transform: translate3d(0, 80px, 0); 
+}
+
+.menu-open:checked ~ .menu-item:nth-child(4) {
+  transform: translate3d(0, 160px, 0);
+}
+
+.menu-open:checked ~ .menu-item:nth-child(5) {
+  transform: translate3d(0, 240px, 0);
+}
+
+.menu-open:checked ~ .menu-item:nth-child(6) {
+  transform: translate3d(0, 320px, 0);
+}
+
+.menu-open:checked ~ .menu-item:nth-child(7) {
+  transform: translate3d(0, 400px, 0);
+}
