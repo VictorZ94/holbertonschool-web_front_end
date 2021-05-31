@@ -1,0 +1,127 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Base
+    ============================= */
+
+:root {
+    --color-black: #090909;
+    --color-white: #FFFFFF;
+    --links: #FF6565;
+    --level-opacity: 0.9;
+    --main-color: #071629;
+
+    --text-color: var(--color-black);
+
+    --font-size-nav-small: 1rem;
+    --font-size-polygon-large: 3rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--color-black);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-back {
+    background-image: url(../images/background-main.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    width: 100%;
+    position: relative;
+}
+
+/* Header
+    ============================= */
+
+.header {
+    padding-top: 2rem;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+a.nav-link:active {
+    color: var(--links);
+}
+
+a.nav-link:hover {
+     color: var(--links);
+}
+
+.navbar-menu .nav-link {
+    padding: 1rem;
+}
+
+/* main section
+    ============================= */
+
+.section-main {
+    margin-top: 19rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.section-body-header {
+    text-align: center;
+}
+
+.subtitle {
+    font-weight: bold;
+}
+
+.dark > * {
+    color: var(--color-white);
+}
+
+/* button
+    ============================= */
+
+.button {
+    display: inline-block;
+    width: 162px;
+    height: 44px;
+    background-color: var(--links);
+    font-size: 14px;
+    text-align: center;
+    align-items: center;
+    text-transform: uppercase;
+    padding-top: 13px;
+    border-radius: 22px;
+    box-shadow: 5px 5px 22px #464545;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    font-weight: bold;
+}
+
+.button:hover {
+    opacity: .9;
+}
+
+.content-main {
+    text-align: center;
+    line-height: 26px;
+}
