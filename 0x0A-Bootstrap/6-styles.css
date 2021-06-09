@@ -1,0 +1,69 @@
+:root {
+    /* background and hover/focus/active state */
+    --bg-color-primary: #E0003C;
+    --hover-color: #BC1340;
+
+    /* outline styles */
+    --outline-color: var(--bg-color-primary);
+
+    /* text color everything anchor tag */
+    --text-color-anchor: var(--bg-color-primary);
+    --text-color-primary: #FFFFFF;
+
+    /* cards header and footer*/
+    --card-border: 1px solid var(--bg-color-primary);
+
+    /* text muted */
+    --text-muted: #8C8C8C;
+}
+
+.btn-outline-primary, .btn-primary {
+    color: var(--text-color-anchor) !important;
+    border-color: var(--bg-color-primary) !important;
+    
+}
+
+.btn-primary {
+    background-color: var(--bg-color-primary) !important;
+    color: var(--text-color-primary) !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: var(--hover-color) !important;
+    
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus, 
+.btn-outline-primary:active {
+    background-color: var(--bg-color-primary) !important;
+    border-color: var(--bg-color-primary) !important;
+    color: var(--text-color-primary) !important;
+}
+
+.btn:active,
+.btn:focus {
+    box-shadow: 0 0 0 .2rem var(--outline-color) !important;
+}
+
+.card .card-header {
+    background-color: var(--bg-color-primary);
+    color: var(--text-color-primary);
+    /* border: var(--card-border); */
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card {
+    border: var(--card-border);
+    border-radius: 1rem;
+}
+
+.border-bottom {
+    border-bottom: 1px solid var(--bg-color-primary) !important;
+}
+
+.border-top {
+    border-top: 1px solid var(--bg-color-primary) !important;
+}
