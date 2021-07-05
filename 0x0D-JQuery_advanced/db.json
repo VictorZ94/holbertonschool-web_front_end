@@ -1,0 +1,64 @@
+{
+    "posts": [
+      {
+        "id": 1,
+        "title": "json-server",
+        "author": "typicode"
+      },
+      {
+        "title": "Divina comedia",
+        "author": "Dante Alighieri",
+        "id": 2
+      },
+      {
+        "title": "Orgullo y prejuicio",
+        "author": "Jane Austen",
+        "id": 3
+      },
+      {
+        "title": "Decamerón",
+        "author": "Giovanni Boccaccio",
+        "id": 4
+      },
+      {
+        "title": "Los cuentos de Canterbury",
+        "author": "Denis Diderot",
+        "id": 5
+      },
+      {
+        "title": "Crimen y castigo",
+        "author": "Fiódor Dostoievski", 
+        "id": 6
+      },
+      {
+        "title": "El ruido y la furia",
+        "author": "William Faulkner",
+        "id": 7
+      },
+      {
+        "title": "Almas muertas",
+        "author": "Nikolai Gogol",
+        "id": 8
+      },
+      {
+        "title": "El viejo y el mar",
+        "author": "Ernest Hemingway",
+        "id": 9
+      },
+      {
+        "title": "Pippi Calzaslargas",
+        "author": "Astrid Lindgren",
+        "id": 10
+      }
+    ],
+    "comments": [
+      {
+        "id": 1,
+        "body": "some comment",
+        "postId": 1
+      }
+    ],
+    "profile": {
+      "name": "typicode"
+    }
+  }

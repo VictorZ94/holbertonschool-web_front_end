@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+
+        <meta charset="utf-8" />
+        <title>Task 0</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+
+
+        <script type="application/javascript">
+            function createFamilyTree() {
+                $('body').append('<table></table>');
+                // create the header and its children
+                $('body').children('table').append('<thead></thead>');
+                $('table').children('thead').append('<tr></tr>');
+                $('thead').children('tr').append('<th></th>');
+                $('thead').children('tr').append('<th></th>');
+
+                $('thead th:first').text('Firstname');
+                $('thead th:last').text('Lastname');
+
+                // create the body and its children
+                $('body').children('table').append('<tbody></tbody>');
+                $('table').children('tbody').append('<tr></tr>');
+                $('table').children('tbody').append('<tr></tr>');
+                $('table').children('tbody').append('<tr></tr>');
+
+                $('tbody').children('tr').append('<td></td>');
+                $('tbody').children('tr').append('<td class="lastname"></td>');
+
+                $('tbody tr:first td:first').text('Guillaume');
+                $('tbody tr:last').prev().children('td:first').text('Paulette');
+                $('tbody tr:last td:first').text('Antoine');
+
+                $('tbody tr td.lastname').text('Salva');
+
+            }
+            $().ready(createFamilyTree());
+        </script>
+    </body>
+</html>
